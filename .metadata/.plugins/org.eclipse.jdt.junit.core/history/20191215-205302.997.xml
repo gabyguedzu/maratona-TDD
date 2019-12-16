@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="New_configuration" project="teste-de-unidade" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.018" displayname="TesteDoAvaliador" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]">
-    <testcase name="main" classname="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.018" displayname="main()" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]/[method:main()]"/>
-  </testsuite>
-</testrun>

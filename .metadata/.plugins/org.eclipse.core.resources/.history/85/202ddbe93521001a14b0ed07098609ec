@@ -7,7 +7,6 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
-import br.com.caelum.leilao.builder.CriadorDeLeilao;
 import br.com.caelum.leilao.dominio.Lance;
 import br.com.caelum.leilao.dominio.Leilao;
 import br.com.caelum.leilao.dominio.Usuario;
@@ -54,12 +53,12 @@ public class TesteDoAvaliador {
 
 	@Test
 	public void deveEncontrarOsTresMaioresLances() {
-		Leilao leilao = new CriadorDeLeilao().para("HB20 Novo!!!!")
-				.lance(joao, 1000.0)
-				.lance(eu, 2000.0)
-				.lance(joao, 3000.0)
-				.lance(eu, 4000.0)
-				.constroi();
+
+		Leilao leilao = new Leilao("HB20 Novo!!!!");
+		leilao.propoe(new Lance(joao, 1000.0));
+		leilao.propoe(new Lance(eu, 2000.0));
+		leilao.propoe(new Lance(joao, 3000.0));
+		leilao.propoe(new Lance(eu, 4000.0));
 
 		leiloeiro.avalia(leilao);
 

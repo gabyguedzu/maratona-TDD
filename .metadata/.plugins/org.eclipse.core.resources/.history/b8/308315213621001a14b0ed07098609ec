@@ -1,0 +1,14 @@
+package br.com.caelum.leilao.builder;
+
+import br.com.caelum.leilao.dominio.Leilao;
+
+public class CriadorDeLeilao {
+	
+	private Leilao leilao;
+
+	public CriadorDeLeilao para(String descricao) {
+		this.leilao = new Leilao(descricao);
+		return this;
+	}
+
+}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TDD" project="teste-de-unidade" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.033" displayname="TesteDoAvaliador" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]">
-    <testcase name="deveEntenderLancesComApenasUmLance" classname="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.014" displayname="deveEntenderLancesComApenasUmLance()" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]/[method:deveEntenderLancesComApenasUmLance()]"/>
-    <testcase name="deveEncontrarOsTresMaioresLances" classname="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.001" displayname="deveEncontrarOsTresMaioresLances()" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]/[method:deveEncontrarOsTresMaioresLances()]"/>
-    <testcase name="deveEntenderLancesEmOrdemCrescente" classname="br.com.caelum.leilao.teste.TesteDoAvaliador" time="0.018" displayname="deveEntenderLancesEmOrdemCrescente()" uniqueid="[engine:junit-jupiter]/[class:br.com.caelum.leilao.teste.TesteDoAvaliador]/[method:deveEntenderLancesEmOrdemCrescente()]"/>
-  </testsuite>
-</testrun>

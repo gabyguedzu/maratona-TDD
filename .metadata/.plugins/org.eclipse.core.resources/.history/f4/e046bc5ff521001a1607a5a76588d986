@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -28,19 +29,19 @@ public class TesteDoAvaliador {
 		zezaoDaTapioca = new Usuario("Zezão da Tapioca");
 	}
 
-//	@Test(expected=RuntimeException.class)
-//	public void naoDeveAvaliarLeilaoesSemNenhumLanceDado() {
-//		Leilao leilao = new CriadorDeLeilao().para("PS4").constroi();
-//		leiloeiro.avalia(leilao);
-//		Assert.fail();
-//	}
+	@Test(expected=RuntimeException.class)
+	public void naoDeveAvaliarLeilaoesSemNenhumLanceDado() {
+		Leilao leilao = new CriadorDeLeilao().para("PS4").constroi();
+		leiloeiro.avalia(leilao);
+		Assert.fail();
+	}
 
 	@Test
 	public void deveEntenderLancesEmOrdemCrescente() {
 		Leilao leilao = new Leilao("HB20 Novo!!!!");
 		leilao.propoe(new Lance(joao, 300.00));
 		leilao.propoe(new Lance(eu, 600.00));
-		leilao.propoe(new Lance(zezaoDaTapioca, 900.00)); 
+		leilao.propoe(new Lance(zezaoDaTapioca, 900.00));
 
 		leiloeiro.avalia(leilao);
 

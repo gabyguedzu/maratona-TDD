@@ -4,7 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import org.junit.Before;
+import org.junit.Assert;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import br.com.caelum.leilao.builder.CriadorDeLeilao;
@@ -15,17 +16,24 @@ import br.com.caelum.leilao.servico.Avaliador;
 
 public class TesteDoAvaliador {
 
-	private Avaliador leiloeiro;
-	private Usuario joao;
-	private Usuario eu;
-	private Usuario zezaoDaTapioca;
+	private static Avaliador leiloeiro;
+	private static Usuario joao;
+	private static Usuario eu;
+	private static Usuario zezaoDaTapioca;
 
-	@Before
-	public void criaAvaliador() {
-		this.leiloeiro = new Avaliador();
-		this.joao = new Usuario("João");
-		this.eu = new Usuario("Gabriela");
-		this.zezaoDaTapioca = new Usuario("Zezão da Tapioca");
+	@BeforeAll
+	static void criaAvaliador() {
+		leiloeiro = new Avaliador();
+		joao = new Usuario("João");
+		eu = new Usuario("Gabriela");
+		zezaoDaTapioca = new Usuario("Zezão da Tapioca");
+	}
+
+	@Test(expected=RuntimeException.class)
+	public void naoDeveAvaliarLeilaoesSemNenhumLanceDado() {
+		Leilao leilao = new CriadorDeLeilao().para("PS4").constroi();
+		leiloeiro.avalia(leilao);
+		Assert.fail();
 	}
 
 	@Test
@@ -54,12 +62,8 @@ public class TesteDoAvaliador {
 
 	@Test
 	public void deveEncontrarOsTresMaioresLances() {
-		Leilao leilao = new CriadorDeLeilao().para("HB20 Novo!!!!")
-				.lance(joao, 1000.0)
-				.lance(eu, 2000.0)
-				.lance(joao, 3000.0)
-				.lance(eu, 4000.0)
-				.constroi();
+		Leilao leilao = new CriadorDeLeilao().para("HB20 Novo!!!!").lance(joao, 1000.0).lance(eu, 2000.0)
+				.lance(joao, 3000.0).lance(eu, 4000.0).constroi();
 
 		leiloeiro.avalia(leilao);
 

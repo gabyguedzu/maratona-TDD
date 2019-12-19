@@ -3,7 +3,13 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Usuario"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Usuario"/>
+<fullyQualifiedTypeName name="br.com.caelum.leilao.servico.Avaliador"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Leilao"/>
 <fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Lance"/>
+<fullyQualifiedTypeName name="br.com.caelum.leilao.builder.CriadorDeLeilao"/>
 </qualifiedTypeNameHistroy>

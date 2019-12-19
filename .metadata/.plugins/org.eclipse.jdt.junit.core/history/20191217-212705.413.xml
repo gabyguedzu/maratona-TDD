@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LeilaoTest" project="teste-de-unidade" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="br.com.caelum.leilao.teste.LeilaoTest" time="0.092">
-    <testcase name="deveReceberVariosLances" classname="br.com.caelum.leilao.teste.LeilaoTest" time="0.091"/>
-    <testcase name="deveReceberUmLance" classname="br.com.caelum.leilao.teste.LeilaoTest" time="0.001"/>
-  </testsuite>
-</testrun>

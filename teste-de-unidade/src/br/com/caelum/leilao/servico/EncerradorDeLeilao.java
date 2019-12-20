@@ -22,7 +22,7 @@ public class EncerradorDeLeilao {
 			if (comecouSemanaPassada(leilao)) {
 				leilao.encerra();
 				total++;
-				dao.atualiza(leilao);
+			//	dao.atualiza(leilao);
 			}
 		}
 	}

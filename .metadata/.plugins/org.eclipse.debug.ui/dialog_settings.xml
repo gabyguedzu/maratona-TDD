@@ -11,8 +11,8 @@
 		<item value="1024" key="DIALOG_WIDTH"/>
 		<item value="1|Noto Sans|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value=", org.eclipse.jdt.junit.launchconfig, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
-		<item value="661" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="663" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
 		<item value="640" key="DIALOG_HEIGHT"/>
-		<item value="335" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
+		<item value="336" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
 	</section>
 </section>
